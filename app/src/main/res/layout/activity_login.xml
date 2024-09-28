@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partnerup"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp">
+
+    </TextView>
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/etbg"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/loginpemail">
+
+    </EditText>
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/etbg"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/loginpassword"
+        android:drawableEnd="@drawable/hidden"
+        android:paddingRight="20dp">
+
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textSize="15dp"
+        android:layout_marginBottom="15dp">
+
+    </TextView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/etbg"
+        android:text="Continue with Google"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/google"
+        android:drawablePadding="7dp"
+        android:gravity=""
+        android:paddingLeft="90dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/googlesignup">
+
+    </androidx.appcompat.widget.AppCompatButton>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No account?">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Create one"
+            android:textColor="#2196F3"
+            android:id="@+id/create">
+
+        </TextView>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btnbg"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textAllCaps="true"
+        android:id="@+id/Login">
+
+    </androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>
